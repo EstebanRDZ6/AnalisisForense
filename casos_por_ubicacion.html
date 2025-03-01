@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9014fe8797b090329c13b2d92e76a61c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9014fe8797b090329c13b2d92e76a61c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9014fe8797b090329c13b2d92e76a61c = L.map(
+                "map_9014fe8797b090329c13b2d92e76a61c",
+                {
+                    center: [10.0, -60.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f48c58297ac42edb7b374fc203a7f62b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f48c58297ac42edb7b374fc203a7f62b.addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+            var marker_56071755d249d8a6c5d8198552d2c792 = L.marker(
+                [19.4326, -99.1332],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_cca29608c5f9aa6d1ce7976f271cb082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f43660560969462d3deff6907e51508f = $(`<div id="html_f43660560969462d3deff6907e51508f" style="width: 100.0%; height: 100.0%;">Ciudad de México: 14 casos</div>`)[0];
+                popup_cca29608c5f9aa6d1ce7976f271cb082.setContent(html_f43660560969462d3deff6907e51508f);
+            
+        
+
+        marker_56071755d249d8a6c5d8198552d2c792.bindPopup(popup_cca29608c5f9aa6d1ce7976f271cb082)
+        ;
+
+        
+    
+    
+            marker_56071755d249d8a6c5d8198552d2c792.bindTooltip(
+                `<div>
+                     Ciudad de México
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_583e7e1cec2538fc99bc88a2f7d73250 = L.marker(
+                [-12.0464, -77.0428],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_d46ea281cda672b4a52e977c3aaaa4ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2852ac5542d59ce46a62e96d2d0ffb88 = $(`<div id="html_2852ac5542d59ce46a62e96d2d0ffb88" style="width: 100.0%; height: 100.0%;">Lima: 14 casos</div>`)[0];
+                popup_d46ea281cda672b4a52e977c3aaaa4ff.setContent(html_2852ac5542d59ce46a62e96d2d0ffb88);
+            
+        
+
+        marker_583e7e1cec2538fc99bc88a2f7d73250.bindPopup(popup_d46ea281cda672b4a52e977c3aaaa4ff)
+        ;
+
+        
+    
+    
+            marker_583e7e1cec2538fc99bc88a2f7d73250.bindTooltip(
+                `<div>
+                     Lima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47ae3d3884562a440e5d40fe99cb1219 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_12c4332efeb7b464379388c35b827138 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1a6cf6798db7ef484870c20a7d6f1b3 = $(`<div id="html_b1a6cf6798db7ef484870c20a7d6f1b3" style="width: 100.0%; height: 100.0%;">Madrid: 14 casos</div>`)[0];
+                popup_12c4332efeb7b464379388c35b827138.setContent(html_b1a6cf6798db7ef484870c20a7d6f1b3);
+            
+        
+
+        marker_47ae3d3884562a440e5d40fe99cb1219.bindPopup(popup_12c4332efeb7b464379388c35b827138)
+        ;
+
+        
+    
+    
+            marker_47ae3d3884562a440e5d40fe99cb1219.bindTooltip(
+                `<div>
+                     Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c0dcf7daaea7402d04729e55d228b5a = L.marker(
+                [4.711, -74.0721],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_2355ce1733d8f9c46c0a1fde284f6f93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a85074ee87a9952ec79a51b8d4c034d0 = $(`<div id="html_a85074ee87a9952ec79a51b8d4c034d0" style="width: 100.0%; height: 100.0%;">Bogotá: 14 casos</div>`)[0];
+                popup_2355ce1733d8f9c46c0a1fde284f6f93.setContent(html_a85074ee87a9952ec79a51b8d4c034d0);
+            
+        
+
+        marker_5c0dcf7daaea7402d04729e55d228b5a.bindPopup(popup_2355ce1733d8f9c46c0a1fde284f6f93)
+        ;
+
+        
+    
+    
+            marker_5c0dcf7daaea7402d04729e55d228b5a.bindTooltip(
+                `<div>
+                     Bogotá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7fc5967d15d6d4f30446ce78bc542494 = L.marker(
+                [-34.6037, -58.3816],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_e7816e2e55ecef36b6dced0ad7cd2bc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_884e0db871d8d11e6232c9213e26f4ce = $(`<div id="html_884e0db871d8d11e6232c9213e26f4ce" style="width: 100.0%; height: 100.0%;">Buenos Aires: 13 casos</div>`)[0];
+                popup_e7816e2e55ecef36b6dced0ad7cd2bc8.setContent(html_884e0db871d8d11e6232c9213e26f4ce);
+            
+        
+
+        marker_7fc5967d15d6d4f30446ce78bc542494.bindPopup(popup_e7816e2e55ecef36b6dced0ad7cd2bc8)
+        ;
+
+        
+    
+    
+            marker_7fc5967d15d6d4f30446ce78bc542494.bindTooltip(
+                `<div>
+                     Buenos Aires
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bbe164b75da532c6987d8f2bc9a21f08 = L.marker(
+                [10.4806, -66.9036],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_e3ea8854774859be9d03e3b249011a2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7312e699e4ad1309d949688771dcc00 = $(`<div id="html_d7312e699e4ad1309d949688771dcc00" style="width: 100.0%; height: 100.0%;">Caracas: 13 casos</div>`)[0];
+                popup_e3ea8854774859be9d03e3b249011a2a.setContent(html_d7312e699e4ad1309d949688771dcc00);
+            
+        
+
+        marker_bbe164b75da532c6987d8f2bc9a21f08.bindPopup(popup_e3ea8854774859be9d03e3b249011a2a)
+        ;
+
+        
+    
+    
+            marker_bbe164b75da532c6987d8f2bc9a21f08.bindTooltip(
+                `<div>
+                     Caracas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_412864e8de44b022bc18423768980878 = L.marker(
+                [-34.9011, -56.1645],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_80230a74699b8d018da3488065bdf379 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7a01c9f50d571d6df7dc30594ae404d = $(`<div id="html_e7a01c9f50d571d6df7dc30594ae404d" style="width: 100.0%; height: 100.0%;">Montevideo: 13 casos</div>`)[0];
+                popup_80230a74699b8d018da3488065bdf379.setContent(html_e7a01c9f50d571d6df7dc30594ae404d);
+            
+        
+
+        marker_412864e8de44b022bc18423768980878.bindPopup(popup_80230a74699b8d018da3488065bdf379)
+        ;
+
+        
+    
+    
+            marker_412864e8de44b022bc18423768980878.bindTooltip(
+                `<div>
+                     Montevideo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b67c74f04439434b19b749d865090e2f = L.marker(
+                [-33.4489, -70.6693],
+                {
+}
+            ).addTo(map_9014fe8797b090329c13b2d92e76a61c);
+        
+    
+        var popup_bd9c5d721ee1b4c1b9f66a92e593f07e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1a2178c6d25178694d7b76ce1a3a60b = $(`<div id="html_f1a2178c6d25178694d7b76ce1a3a60b" style="width: 100.0%; height: 100.0%;">Santiago: 13 casos</div>`)[0];
+                popup_bd9c5d721ee1b4c1b9f66a92e593f07e.setContent(html_f1a2178c6d25178694d7b76ce1a3a60b);
+            
+        
+
+        marker_b67c74f04439434b19b749d865090e2f.bindPopup(popup_bd9c5d721ee1b4c1b9f66a92e593f07e)
+        ;
+
+        
+    
+    
+            marker_b67c74f04439434b19b749d865090e2f.bindTooltip(
+                `<div>
+                     Santiago
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
